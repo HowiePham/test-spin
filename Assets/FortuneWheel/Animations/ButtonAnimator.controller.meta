@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c691962b1d3f1460b94bd5ec03d6fa34
+timeCreated: 1467620821
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 66403
+  packageName: Wheel of Fortune (Gacha) - Tool for monetization, retention and daily
+    bonus
+  packageVersion: 2.0.1
+  assetPath: Assets/FortuneWheel/Animations/ButtonAnimator.controller
+  uploadId: 155733

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 563c851c45cff4485b2cf654b1424544
+timeCreated: 1467620703
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 66403
+  packageName: Wheel of Fortune (Gacha) - Tool for monetization, retention and daily
+    bonus
+  packageVersion: 2.0.1
+  assetPath: Assets/FortuneWheel/Animations/CoinsDeltaAnimator.controller
+  uploadId: 155733
