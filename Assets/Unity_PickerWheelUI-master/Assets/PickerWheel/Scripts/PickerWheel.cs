@@ -1,9 +1,8 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
-using DG.Tweening;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using DG.Tweening;
 using Random = UnityEngine.Random;
 
 namespace EasyUI.PickerWheelUI
@@ -19,6 +18,7 @@ namespace EasyUI.PickerWheelUI
         [SerializeField] private Transform wheelCircle;
         [SerializeField] private GameObject wheelPiecePrefab;
         [SerializeField] private Transform wheelPiecesParent;
+        [SerializeField] private Transform wheelIndicator;
 
         [Space] [Header("Sounds :")] [SerializeField]
         private AudioSource audioSource;
@@ -35,12 +35,16 @@ namespace EasyUI.PickerWheelUI
 
         [SerializeField] [Range(1f, 100f)] private int numberOfRound = 1;
         [SerializeField] [Range(.2f, 2f)] private float wheelSize = 1f;
-        [SerializeField] private float _currentLerpRotationTime;
         [SerializeField] private bool isSpinning;
         [SerializeField] private AnimationCurve animationCurve;
 
         [Space] [Header("Picker wheel pieces :")]
         public WheelPiece[] wheelPieces;
+
+        [Space] [Header("Wheel Indicator :")] [SerializeField]
+        private float shakeAmplitude;
+
+        [SerializeField] private float shakeDuration;
 
         // Events
         private UnityAction onSpinStartEvent;
@@ -50,7 +54,9 @@ namespace EasyUI.PickerWheelUI
         private Vector2 pieceMinSize = new Vector2(81f, 146f);
         private Vector2 pieceMaxSize = new Vector2(144f, 213f);
 
+        private float _currentLerpRotationTime;
         private WheelPiece piece;
+        private Tween _indicatorTween;
         private float startAngle;
         private float finalAngle;
         private float prevAngle;
@@ -58,8 +64,6 @@ namespace EasyUI.PickerWheelUI
         private float pieceAngle;
         private float halfPieceAngle;
         private float halfPieceAngleWithPaddings;
-
-
         private double accumulatedWeight;
         private System.Random rand = new System.Random();
 
@@ -67,6 +71,7 @@ namespace EasyUI.PickerWheelUI
 
         private void Start()
         {
+            ChangeFPS();
             pieceAngle = 360 / wheelPieces.Length;
             halfPieceAngle = pieceAngle / 2f;
             halfPieceAngleWithPaddings = halfPieceAngle - (halfPieceAngle / 10f);
@@ -126,6 +131,20 @@ namespace EasyUI.PickerWheelUI
         }
 
 
+        private void ShakeIndicator()
+        {
+            if (_indicatorTween != null && _indicatorTween.IsActive())
+            {
+                wheelIndicator.localEulerAngles = Vector3.zero;
+                _indicatorTween.Kill();
+            }
+
+            _indicatorTween = this.wheelIndicator
+                .DOLocalRotate(new Vector3(0, 0, shakeAmplitude), shakeDuration / 2)
+                .SetLoops(2, LoopType.Yoyo)
+                .SetEase(Ease.OutQuad);
+        }
+
         public void Spin()
         {
             if (onSpinStartEvent != null)
@@ -151,7 +170,6 @@ namespace EasyUI.PickerWheelUI
             this.finalAngle = targetRotation.z;
             this.startAngle = this.wheelCircle.eulerAngles.z;
 
-            bool isIndicatorOnTheLine = false;
             _currentLerpRotationTime = 0f;
             this.isSpinning = true;
         }
@@ -190,6 +208,7 @@ namespace EasyUI.PickerWheelUI
                 if (isIndicatorOnTheLine)
                 {
                     audioSource.PlayOneShot(audioSource.clip);
+                    ShakeIndicator();
                 }
 
                 // Debug.Log($"--- (ROTATION) Feedback at angle: {currentAngle}");
