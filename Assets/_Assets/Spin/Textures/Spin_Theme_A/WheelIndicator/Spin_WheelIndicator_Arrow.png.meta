@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 99b18b8fc37ba40fa8f953a56705f42a
+guid: cd62e1e48b20c4a0c8e87b1fe0efd184
 AssetOrigin:
   serializedVersion: 1
   productId: 66403
   packageName: Wheel of Fortune (Gacha) - Tool for monetization, retention and daily
     bonus
   packageVersion: 2.0.1
-  assetPath: Assets/FortuneWheel/Images/TurnButtonFree.png
+  assetPath: Assets/FortuneWheel/Images/Arrow.png
   uploadId: 155733
 TextureImporter:
   internalIDToNameTable: []
@@ -43,7 +43,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 1
-    aniso: 16
+    aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
@@ -54,8 +54,8 @@ TextureImporter:
   spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.16248506}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -135,7 +135,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []

@@ -28,11 +28,12 @@ namespace EasyUI.PickerWheelUI
         [SerializeField] [Range(-3f, 3f)] private float pitch = 1f;
 
         [Space] [Header("Picker wheel settings :")] [SerializeField]
-        private int piecesMin = 2;
+        private Vector2 pieceMinSize = new Vector2(81f, 146f);
 
+        [SerializeField] private Vector2 pieceMaxSize = new Vector2(144f, 213f);
+        [SerializeField] private int piecesMin = 2;
         [SerializeField] private int piecesMax = 12;
         [Range(1, 20)] public int spinDuration = 8;
-
         [SerializeField] [Range(1f, 100f)] private int numberOfRound = 1;
         [SerializeField] [Range(.2f, 2f)] private float wheelSize = 1f;
         [SerializeField] private bool isSpinning;
@@ -46,14 +47,8 @@ namespace EasyUI.PickerWheelUI
 
         [SerializeField] private float shakeDuration;
 
-        // Events
         private UnityAction onSpinStartEvent;
         private UnityAction<WheelPiece> onSpinEndEvent;
-
-
-        private Vector2 pieceMinSize = new Vector2(81f, 146f);
-        private Vector2 pieceMaxSize = new Vector2(144f, 213f);
-
         private float _currentLerpRotationTime;
         private WheelPiece piece;
         private Tween _indicatorTween;

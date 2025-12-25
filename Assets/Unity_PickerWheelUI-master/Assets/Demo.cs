@@ -4,7 +4,6 @@ using UnityEngine.UI ;
 
 public class Demo : MonoBehaviour {
    [SerializeField] private Button uiSpinButton ;
-   [SerializeField] private Text uiSpinButtonText ;
 
    [SerializeField] private PickerWheel pickerWheel ;
 
@@ -13,7 +12,6 @@ public class Demo : MonoBehaviour {
       uiSpinButton.onClick.AddListener (() => {
 
          uiSpinButton.interactable = false ;
-         uiSpinButtonText.text = "Spinning" ;
 
          pickerWheel.OnSpinEnd (wheelPiece => {
             Debug.Log (
@@ -22,7 +20,6 @@ public class Demo : MonoBehaviour {
             ) ;
 
             uiSpinButton.interactable = true ;
-            uiSpinButtonText.text = "Spin" ;
          }) ;
 
          pickerWheel.Spin () ;
