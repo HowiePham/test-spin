@@ -15,7 +15,7 @@ public class Demo : MonoBehaviour {
 
          pickerWheel.OnSpinEnd (wheelPiece => {
             Debug.Log (
-               @" <b>Index:</b> " + wheelPiece.Index + "           <b>Label:</b> " + wheelPiece.Label
+               @" <b>Index:</b> " + wheelPiece.Index + "           <b>Label:</b> " + wheelPiece.label
                + "\n <b>Amount:</b> " + wheelPiece.Amount + "      <b>Chance:</b> " + wheelPiece.Chance + "%"
             ) ;
 

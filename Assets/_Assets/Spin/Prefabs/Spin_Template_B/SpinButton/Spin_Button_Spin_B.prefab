@@ -91,6 +91,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spin_Button_Spin_B
       objectReference: {fileID: 0}
+    - target: {fileID: 7466636470222060771, guid: 3011fca574a4ebb4db05ad3fbee633e6, type: 3}
+      propertyPath: m_Transition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7830365282898638155, guid: 3011fca574a4ebb4db05ad3fbee633e6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

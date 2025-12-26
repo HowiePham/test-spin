@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224717427032141990}
+  - component: {fileID: 6594449344140377678}
   m_Layer: 0
   m_Name: Spin_RewardIcon
   m_TagString: Untagged
@@ -36,6 +37,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 249, y: 234}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6594449344140377678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013547879587396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e60f67252d16f434592432f6cfb31abe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1074861313521746
 GameObject:
   m_ObjectHideFlags: 0

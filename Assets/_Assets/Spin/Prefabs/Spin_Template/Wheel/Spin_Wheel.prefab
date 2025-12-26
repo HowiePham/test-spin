@@ -122,7 +122,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8240806171798309333}
   - component: {fileID: 1394145947774038836}
-  - component: {fileID: 53330485183508012}
+  - component: {fileID: 2349139054218291636}
+  - component: {fileID: 8757499946894343183}
   m_Layer: 0
   m_Name: Spin_Wheel
   m_TagString: Untagged
@@ -248,7 +249,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &53330485183508012
+--- !u!114 &2349139054218291636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,22 +258,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 3312926400623411456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa4bebc7bfe9d394592353853ce4bc26, type: 3}
+  m_Script: {fileID: 11500000, guid: 1bf5832b2e1196840957477b758fadba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   linePrefab: {fileID: 0}
   linesParent: {fileID: 2115655951300966854}
-  PickerWheelTransform: {fileID: 8240806171798309333}
+  pickerWheelTransform: {fileID: 8240806171798309333}
   wheelCircle: {fileID: 7536803555770508297}
   wheelPiecePrefab: {fileID: 0}
   wheelPiecesParent: {fileID: 2426555127547900150}
   wheelIndicator: {fileID: 0}
-  audioSource: {fileID: 1394145947774038836}
-  tickAudioClip: {fileID: 8300000, guid: 43186eb953e63e546b2c31cb280f58d8, type: 3}
-  volume: 0.03
-  pitch: 1
-  pieceMinSize: {x: 300, y: 200}
-  pieceMaxSize: {x: 300, y: 300}
+  pieceMinSize: {x: 81, y: 146}
+  pieceMaxSize: {x: 144, y: 213}
   piecesMin: 2
   piecesMax: 12
   spinDuration: 7
@@ -367,9 +364,30 @@ MonoBehaviour:
     Chance: 10
     Index: 0
     _weight: 0
-  shakeAmplitude: 30
-  shakeDuration: 0.1
+  OnSpinStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPassingSegment:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSpinEndEvent:
+    m_PersistentCalls:
+      m_Calls: []
   targetFPS: 60
+--- !u!114 &8757499946894343183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3312926400623411456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f8312e6a537f94f8d1b01d8691af23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1394145947774038836}
+  tickAudioClip: {fileID: 8300000, guid: 43186eb953e63e546b2c31cb280f58d8, type: 3}
 --- !u!1 &3433973168450631728
 GameObject:
   m_ObjectHideFlags: 0

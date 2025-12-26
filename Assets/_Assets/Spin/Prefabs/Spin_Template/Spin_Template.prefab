@@ -62,7 +62,7 @@ PrefabInstance:
     - target: {fileID: 7466636470222060771, guid: 3011fca574a4ebb4db05ad3fbee633e6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8100834173508636969}
+      objectReference: {fileID: 6773728482999148835}
     - target: {fileID: 7466636470222060771, guid: 3011fca574a4ebb4db05ad3fbee633e6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -73,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7466636470222060771, guid: 3011fca574a4ebb4db05ad3fbee633e6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: EasyUI.PickerWheelUI.PickerWheel, Assembly-CSharp
+      value: Wheel, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7466636470222060771, guid: 3011fca574a4ebb4db05ad3fbee633e6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -264,13 +264,35 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7187444885637736931, guid: 1fde5c221eb049242ba7fd46fc315b7e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6252978701671834988}
   m_SourcePrefab: {fileID: 100100000, guid: 1fde5c221eb049242ba7fd46fc315b7e, type: 3}
 --- !u!224 &1360535495451034859 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3298788290642689953, guid: 1fde5c221eb049242ba7fd46fc315b7e, type: 3}
   m_PrefabInstance: {fileID: 4550379087810722634}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6672327631313064617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7187444885637736931, guid: 1fde5c221eb049242ba7fd46fc315b7e, type: 3}
+  m_PrefabInstance: {fileID: 4550379087810722634}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6252978701671834988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6672327631313064617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c68f9c3bae70a6b4b84f480aa3dcca0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeAmplitude: 0
+  shakeDuration: 0
 --- !u!1001 &7193845239923764321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,21 +494,148 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3312926400623411456, guid: 804b0c1518867754db101de08a105995, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6773728482999148835}
   m_SourcePrefab: {fileID: 100100000, guid: 804b0c1518867754db101de08a105995, type: 3}
 --- !u!224 &183450786812835536 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8240806171798309333, guid: 804b0c1518867754db101de08a105995, type: 3}
   m_PrefabInstance: {fileID: 8130833554526191365}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8100834173508636969 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 53330485183508012, guid: 804b0c1518867754db101de08a105995, type: 3}
+--- !u!224 &1751509855585573644 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7536803555770508297, guid: 804b0c1518867754db101de08a105995, type: 3}
   m_PrefabInstance: {fileID: 8130833554526191365}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!224 &5871107326399287283 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2426555127547900150, guid: 804b0c1518867754db101de08a105995, type: 3}
+  m_PrefabInstance: {fileID: 8130833554526191365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6714698869821685253 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3312926400623411456, guid: 804b0c1518867754db101de08a105995, type: 3}
+  m_PrefabInstance: {fileID: 8130833554526191365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6773728482999148835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714698869821685253}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa4bebc7bfe9d394592353853ce4bc26, type: 3}
+  m_Script: {fileID: 11500000, guid: 1bf5832b2e1196840957477b758fadba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  linePrefab: {fileID: 0}
+  linesParent: {fileID: 7893358693006182083}
+  pickerWheelTransform: {fileID: 183450786812835536}
+  wheelCircle: {fileID: 1751509855585573644}
+  wheelPiecePrefab: {fileID: 0}
+  wheelPiecesParent: {fileID: 5871107326399287283}
+  pieceMinSize: {x: 81, y: 146}
+  pieceMaxSize: {x: 144, y: 213}
+  piecesMin: 2
+  piecesMax: 12
+  spinDuration: 7
+  numberOfRound: 2
+  wheelSize: 1
+  isSpinning: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.32657662
+      value: 0.57149327
+      inSlope: 1.9297459
+      outSlope: 1.9297459
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.055044267
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  wheelPieces:
+  - Icon: {fileID: 21300000, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+    Label: Lorem
+    Amount: 10
+    Chance: 100
+    Index: 0
+    _weight: 0
+  - Icon: {fileID: 21300002, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+    Label: Iposum
+    Amount: 20
+    Chance: 100
+    Index: 0
+    _weight: 0
+  - Icon: {fileID: 21300004, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+    Label: Tupala
+    Amount: 30
+    Chance: 60
+    Index: 0
+    _weight: 0
+  - Icon: {fileID: 21300030, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+    Label: Consectetur
+    Amount: 40
+    Chance: 25
+    Index: 0
+    _weight: 0
+  - Icon: {fileID: 21300008, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+    Label: Vallar
+    Amount: 60
+    Chance: 10
+    Index: 0
+    _weight: 0
+  - Icon: {fileID: 21300008, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+    Label: Vallar
+    Amount: 60
+    Chance: 10
+    Index: 0
+    _weight: 0
+  - Icon: {fileID: 21300008, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+    Label: Vallar
+    Amount: 60
+    Chance: 10
+    Index: 0
+    _weight: 0
+  - Icon: {fileID: 21300008, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+    Label: Vallar
+    Amount: 60
+    Chance: 10
+    Index: 0
+    _weight: 0
+  - Icon: {fileID: 21300008, guid: 6e980baa502e72148bbc79fb42c81d10, type: 3}
+    Label: Vallar
+    Amount: 60
+    Chance: 10
+    Index: 0
+    _weight: 0
+  targetFPS: 60
+--- !u!224 &7893358693006182083 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2115655951300966854, guid: 804b0c1518867754db101de08a105995, type: 3}
+  m_PrefabInstance: {fileID: 8130833554526191365}
+  m_PrefabAsset: {fileID: 0}

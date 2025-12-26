@@ -109,8 +109,8 @@ namespace EasyUI.PickerWheelUI
             WheelPiece piece = wheelPieces[index];
             Transform pieceTrns = InstantiatePiece().transform.GetChild(0);
 
-            pieceTrns.GetChild(0).GetComponent<Image>().sprite = piece.Icon;
-            pieceTrns.GetChild(1).GetComponent<Text>().text = piece.Label;
+            pieceTrns.GetChild(0).GetComponent<Image>().sprite = piece.icon;
+            pieceTrns.GetChild(1).GetComponent<Text>().text = piece.label;
             pieceTrns.GetChild(2).GetComponent<Text>().text = piece.Amount.ToString();
 
             //Line
@@ -228,7 +228,7 @@ namespace EasyUI.PickerWheelUI
             double r = rand.NextDouble() * accumulatedWeight;
 
             for (int i = 0; i < wheelPieces.Length; i++)
-                if (wheelPieces[i]._weight >= r)
+                if (wheelPieces[i].Weight >= r)
                     return i;
 
             return 0;
@@ -242,7 +242,7 @@ namespace EasyUI.PickerWheelUI
 
                 //add weights:
                 accumulatedWeight += piece.Chance;
-                piece._weight = accumulatedWeight;
+                piece.Weight = accumulatedWeight;
 
                 //add index :
                 piece.Index = i;
