@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 73b4be193645f174baaa98434e7d0b36
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 303962
+  packageName: Game Life System
+  packageVersion: 1.0
+  assetPath: Assets/Life System/Scripts/LifeUi.cs
+  uploadId: 713040

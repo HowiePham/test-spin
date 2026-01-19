@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2764e99556a2a7045a8f666b5b7d77bc
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 303962
+  packageName: Game Life System
+  packageVersion: 1.0
+  assetPath: Assets/Life System/Prefabs/LifeHandler.prefab
+  uploadId: 713040

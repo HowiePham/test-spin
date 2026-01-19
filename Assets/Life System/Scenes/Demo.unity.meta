@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 21e2cae833898e94ca7c4588cf97b94b
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 303962
+  packageName: Game Life System
+  packageVersion: 1.0
+  assetPath: Assets/Life System/Scenes/Demo.unity
+  uploadId: 713040
